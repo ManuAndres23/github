@@ -1,5 +1,7 @@
 package github;
 
+import java.util.Objects;
+
 public class CalcSuma {
 	private int a;
 	private int b;
@@ -26,6 +28,25 @@ public class CalcSuma {
 	public void setB(int b) {
 		this.b = b;
 	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(a, b, res);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		CalcSuma other = (CalcSuma) obj;
+		return a == other.a && b == other.b && res == other.res;
+	}
+	
+	
 	
 	
 }
