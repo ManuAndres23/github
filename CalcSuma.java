@@ -46,7 +46,7 @@ public class CalcSuma {
 		return a == other.a && b == other.b && res == other.res;
 	}
 	
-	/*comentarios*/
+	/*comentarios actualizados*/
 	/*más comentarios*/
 	
 	
