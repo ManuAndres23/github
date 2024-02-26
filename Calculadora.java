@@ -16,16 +16,8 @@ public class Calculadora {
 		return a;
 	}
 
-	public void setA(int a) {
-		this.a = a;
-	}
-
 	public int getB() {
 		return b;
-	}
-
-	public void setB(int b) {
-		this.b = b;
 	}
 	
 	@Override
@@ -43,6 +35,11 @@ public class Calculadora {
 		Calculadora other = (Calculadora) obj;
 		return a == other.a && b == other.b && res == other.res;
 	}
+	@Override
+	public String toString() {
+		return "Calculadora [a=" + a + ", b=" + b + ", res=" + res + "]";
+	}
+	
 	
 	/*comentarios actualizado*/
 	/*más comentarios*/
