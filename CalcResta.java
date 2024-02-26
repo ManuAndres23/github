@@ -26,7 +26,11 @@ public class CalcResta {
 	}
 
 	public void setB(int b) {
-		this.b = b;
+		if (b<0) {
+			System.err.println("El número es muy bajo");
+		}else {
+			this.b = b;
+		}
 	}
 	@Override
 	public int hashCode() {
