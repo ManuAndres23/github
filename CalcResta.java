@@ -17,16 +17,8 @@ public class CalcResta {
 		return a;
 	}
 
-	public void setA(int a) {
-		this.a = a;
-	}
-
 	public int getB() {
 		return b;
-	}
-
-	public void setB(int b) {
-		this.b = b;
 	}
 	@Override
 	public int hashCode() {
@@ -43,6 +35,11 @@ public class CalcResta {
 		CalcResta other = (CalcResta) obj;
 		return a == other.a && b == other.b && res == other.res;
 	}
+	@Override
+	public String toString() {
+		return "CalcResta [a=" + a + ", b=" + b + ", res=" + res + "]";
+	}
+	
 	
 	/*comentarios actualizados*/
 	/*más comentarios*/

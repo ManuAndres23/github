@@ -17,16 +17,8 @@ public class CalcSuma {
 		return a;
 	}
 
-	public void setA(int a) {
-		this.a = a;
-	}
-
 	public int getB() {
 		return b;
-	}
-
-	public void setB(int b) {
-		this.b = b;
 	}
 
 	@Override
@@ -45,6 +37,12 @@ public class CalcSuma {
 		CalcSuma other = (CalcSuma) obj;
 		return a == other.a && b == other.b && res == other.res;
 	}
+
+	@Override
+	public String toString() {
+		return "CalcSuma [a=" + a + ", b=" + b + ", res=" + res + "]";
+	}
+	
 	
 	/*comentarios actualizados*/
 	/*más comentarios*/
